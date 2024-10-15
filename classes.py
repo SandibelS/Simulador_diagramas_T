@@ -73,6 +73,8 @@ class Lenguaje():
                 if se_puede_traducir:
                     return True
         
+        contexto.lenguajes_vistos.remove(self.nombre)
+        
         return False
             
 class Programa():
